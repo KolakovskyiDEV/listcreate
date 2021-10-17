@@ -1,0 +1,212 @@
+.taskWrapper {
+    background-color: rgb(195, 236, 233);
+    border-radius: 10px;
+    box-shadow: 0 0 14px 1px rgba(0, 0, 0, .2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.taskHeading {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.taskDescription {
+    font-size: 16px;
+
+}
+.taskCompleted{
+    padding: 10px;
+    background-color: aliceblue;
+    margin: 10px;
+}
+
+.taskButton{
+    margin: 10px;
+}
+.button {
+  text-decoration: none;
+  margin: -10px 0 0px 0px;
+  transition: all 0.8s ease 0s;
+}
+.button {
+    border-radius: white;
+  position: relative;
+  transition: all 0.8s ease 0s;
+}
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border: 2px solid rgb(198, 211, 10);
+  top: -5px;
+  left: 40px;
+  transition: all 0.8s ease 0s;
+}
+
+.button::before {
+  animation: rotate 8s infinite linear;
+  transition: all 0.8s ease 0s;
+}
+.button::after {
+  animation: rotate 10s infinite linear;
+}
+.button:hover:before,
+.button:hover:after {
+}
+
+.button__text {
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease 0s;
+}
+.button__text::after,
+.button__text::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(52, 207, 21);
+  width: 50%;
+  height: 100%;
+  top: 0;
+  transition: all 0.8s ease 0s;
+}
+.button__text::after {
+  left: 0;
+}
+
+.button__text::before {
+  right: 0;
+  z-index: 1;
+}
+.button__text span {
+  z-index: 1;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button__text:hover:after,
+.button__text:hover:before {
+ 
+}
+.button:hover .button__text {
+  top: -10px;
+  color: #fff;
+  transition: all 0.5s ease 0.2s;
+  box-shadow: 4px 5px 10px 0 #0c5b52;
+}
+.button:hover:before,
+.button:hover:after {
+  left: 100%;
+  opacity: 0;
+}
+
+
+/* ----------------- */
+.buttonDel {
+  text-decoration: none;
+    
+    margin: 15px 0px 0px 60px;
+    border: white;
+    border-radius: 5px;
+    box-shadow: 0 0 14px 1px rgba(0, 0, 0, .2);
+    padding: 4px 9px 6px 9px;
+  transition: all 0.8s ease 0s;
+}
+.buttonDel {
+    border-radius: white;
+  position: relative;
+  transition: all 0.8s ease 0s;
+}
+.buttonDel::before,
+.buttonDel::after {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border: 2px solid rgb(108, 19, 192);
+  top: -10px;
+  left: 40px;
+  transition: all 0.8s ease 0s;
+}
+
+.buttonDel::before {
+  animation: counter-rotate 8s infinite linear;
+  transition: all 0.8s ease 0s;
+}
+.buttonDel::after {
+  animation: counter-rotate 10s infinite linear;
+}
+.buttonDel:hover:before,
+.buttonDel:hover:after {
+}
+
+.buttonDel__text {
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease 0s;
+}
+.buttonDel__text::after,
+.buttonDel__text::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(226, 27, 21);
+  width: 50%;
+  height: 100%;
+  top: 0;
+  transition: all 0.8s ease 0s;
+}
+.buttonDel__text::after {
+  left: 0;
+}
+
+.buttonDel__text::before {
+  right: 0;
+  z-index: 1;
+}
+.buttonDel__text span {
+  z-index: 1;
+}
+@keyframes counter-rotate {
+  0% {
+    transform: rotate(-0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.buttonDel__text:hover:after,
+.buttonDel__text:hover:before {
+ 
+}
+.buttonDel:hover .buttonDel__text {
+  top: -10px;
+  color: #fff;
+  transition: all 0.5s ease 0.2s;
+  box-shadow: 4px 5px 10px 0 #0c5b52;
+}
+.buttonDel:hover:before,
+.buttonDel:hover:after {
+  right: 100%;
+  opacity: 0;
+}
